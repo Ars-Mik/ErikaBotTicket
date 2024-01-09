@@ -1,0 +1,46 @@
+{
+  "clientId": "1015617370011742270", // The id of the discord bot
+  "guildId": "652916388129800202", // The id of the discord server
+  "mainColor": "2f3234", // The hex color of the embeds by default
+  "lang": "main", // If you want to set english please set "main"
+
+
+  "openTicketChannelId": "1026880164900114552", // The id of the channel where the message to create a ticket will be sent
+  "ticketTypes": [ // You have a limit of 25 types (the limit of Discord)
+    {
+      "codeName": "Iventer", // The name need to be in lowercase
+      "name": "Ивентер", // The name that will be displayed in the ticket
+      "emoji": "<:confetti:1051431354392395836>", // The emoji of the type (can be blank)
+      "color": "#f8312f", // Can be a hex color or blank to use the main color
+      "categoryId": "653137143216209920", // The category id where the tickets will be created
+      "customDescription": " Информация об участнике-создателе заявки:\n UUSER \n\n Ответы пользователя на вопросы: \n\n `Вопрос 1:` ** Ваше имя и возраст? ** \n `Ответ:` ** REASON ** \n\n `Вопрос 2:` ** Какие ивенты вы сможете проводить?** \n `Ответ:` **REASON2** \n\n`Вопрос 3:` ** Был ли у вас опыт в данной сфере?** \n`Ответ:` **REASON3** \n\n `Вопрос 4:` **Как часто вы будете проводить ивенты?** \n`Ответ:` ** REASON4** \n\n `Вопрос 5:` **Почему вы решили стать ивентером? ** \n`Ответ:` **REASON5**",
+      "askReason": true // If the bot should ask the reason of the ticket
+    },
+    {
+      "codeName": "Kurator", // The name need to be in lowercase
+      "name": "Куратор", // The name that will be displayed in the ticket
+      "emoji": "<:clover:1051431352341385286>", // The emoji of the type (can be blank)
+      "color": "#21ffe2", // Can be a hex color or blank to use the main color
+      "categoryId": "653137143216209920", // The category id where the tickets will be created
+      "customDescription": " Информация об участнике-создателе заявки:\n UUSER \n\n Ответы пользователя на вопросы: \n\n `Вопрос 1:` **Ваше имя и возраст? ** \n `Ответ:` ** REASON ** \n\n `Вопрос 2:` **Сколько времени вы готовы уделять серверу? ** \n `Ответ:` **REASON2** \n\n `Вопрос 3:` **Был ли у вас опыт в данной сфере?** \n`Ответ:` **REASON3** \n\n `Вопрос 4:` **Почему мы должны выбрать именно вас?** \n`Ответ:` ** REASON4 **", 
+      "askReason": true // If the bot should ask the reason of the ticket
+      
+      
+    }
+  ],
+  "ticketNameOption": "Ticket-TICKETCOUNT", // Here is all parameter: USERNAME, USERID, TICKETCOUNT
+  "rolesWhoHaveAccessToTheTickets": [
+    "719810969664094299",
+    "653126057729458176",
+    "808606199758454814"
+  ], // Roles who can access to the tickets
+  "pingRoleWhenOpened": true,
+  "roleToPingWhenOpenedId": "653126057729458176", // The role to ping when a ticket is opened
+  "logs": true,
+  "logsChannelId": "1048193446118178826", // The id of the channel where the logs will be sent
+  "claimButton": true,
+  "whoCanCloseTicket": "STAFFONLY", // STAFFONLY (roles configured at "rolesWhoHaveAccessToTheTickets") or EVERYONE
+  "closeButton": true, // If false the ticket can be closed only by doing /closes
+  "askReasonWhenClosing": true, // If false the ticket will be closed without asking the reason
+  "maxTicketOpened": 0 // The number of tickets the user can open while another one is already open. Set to 0 to unlimited
+}
